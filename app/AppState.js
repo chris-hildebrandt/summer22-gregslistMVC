@@ -23,7 +23,7 @@ class AppState extends EventEmitter {
   ]
 
   jobs = [
-    new Job({company:"Shady Dealings & Sons Attorneys at Law", start: 07/27/2022, salary: 100000, rate: "Bi-Weekly", img:"https://slm-assets.secondlife.com/assets/10725048/view_large/Devil.jpg?1417868056", description: ""})
+    new Job({company:"Shady Dealings & Sons Attorneys at Law", start: "07/27/2022", salary: 100000, rate: "Bi-Weekly", img:"https://slm-assets.secondlife.com/assets/10725048/view_large/Devil.jpg?1417868056", description:"", title:"slave"})
   ]
 
 }

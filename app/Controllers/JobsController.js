@@ -18,10 +18,10 @@ export class jobsController{
     _drawJobs()
     document.getElementById("form").classList.add("d-none")
     document.getElementById("job-form").classList.remove("d-none")
-    document.getElementById("house-form").classList.remove("d-none")
+    document.getElementById("house-form").classList.add("d-none")
   }
 
-  createHouse(){
+  createjob(){
     // form submission causes a page reload by default
     window.event.preventDefault()
     // we need to explicitly tell the button that the form is what we want to target
