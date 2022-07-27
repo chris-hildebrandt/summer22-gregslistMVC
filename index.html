@@ -22,7 +22,7 @@
     </nav>
     <button class="btn btn-primary" onclick="app.carsController.viewCars()">cars</button>
     <button class="btn btn-primary" onclick="app.housesController.viewHouses()">houses</button>
-    <!-- <button class="btn btn-primary" onclick="app.jobsController.viewJobs()">Jobs</button> -->
+    <button class="btn btn-primary" onclick="app.jobsController.viewJobs()">Jobs</button>
   </header>
   <main>
     <div class="container-fluid">
@@ -76,7 +76,7 @@
           <div class="row p-3">
             <div class="col-4">
               <label class="form-label" for="state">State</label>
-              <input class="form-control" type="text" minlength="5" id="state" name="state">
+              <input class="form-control" type="text" minlength="2" maxlength="2" id="state" name="state">
             </div>
             <div class="col-4">
               <label class="form-label" for="city">City</label>
@@ -96,7 +96,7 @@
           </div>
         </form>
       </section>
-      </section> company, title, start, salary, img, description
+      </section>
       <!-- STUB JOB FORM -->
       <section id="job-form" class="row justify-content-center p-3 d-none">
         <form class="col-10 bg-white p-3 elevation-2" onsubmit="app.jobsController.createJob()">
@@ -112,16 +112,16 @@
             </div>
             <div class="col-4">
               <label class="form-label" for="start">Start Date</label>
-              <input class="form-control" type="text" id="start" name="start">
+              <input class="form-control" type="date" id="start" name="start">
             </div>
             <label class="form-label" for="salary">Salary</label>
             <input class="form-control" type="number" min="1" id="salary" name="salary">
-            <!-- <label for="cars">Choose a car:</label>
-            <select name="cars" id="cars">
-              <option value="volvo">Volvo</option>
-              <option value="saab">Saab</option>
-              <option value="opel">Opel</option>
-              <option value="audi">Audi</option>
+            <label class="form-label" for="rate">Rate</label>
+            <select name="rate" id="rate">
+              <option value="hourly">Hourly</option>
+              <option value="bi-weekly">Bi-Weekly</option>
+              <option value="monthly">Monthly</option>
+              <option value="annually">Annually</option>
             </select> -->
             <label class="form-label" for="img">Image</label>
             <input class="form-control" type="text" id="img" name="img">
@@ -136,7 +136,7 @@
   </main>
   <footer class="bg-dark text-light">
     <div class="text-center no-select">
-      <p><small>Made with 💖 by Codeworks</small></p>
+      <p><small>Made with 🎇 by Chris</small></p>
     </div>
   </footer>
 
