@@ -1,5 +1,6 @@
 import { ProxyState } from "../AppState.js";
-
+import { jobsService } from "../Services/JobsService.js";
+import { loadState, saveState } from "../Utils/LocalStorage.js";
 
 // Private Functions
 function _drawJobs(){
@@ -12,6 +13,8 @@ export class jobsController{
   constructor(){
     // runs on load
     ProxyState.on("jobs", _drawJobs)
+    ProxyState.on("jobs", saveState)
+    loadState()
   }
 
   viewJobs(){
@@ -21,7 +24,7 @@ export class jobsController{
     document.getElementById("house-form").classList.add("d-none")
   }
 
-  createjob(){
+  createJob(){
     // form submission causes a page reload by default
     window.event.preventDefault()
     // we need to explicitly tell the button that the form is what we want to target
@@ -38,5 +41,9 @@ export class jobsController{
     }
     jobsService.createJob(newJob)
     form.reset()
+  }
+
+  deleteJob(id){
+    jobsService.deleteJob(id)
   }
 }
