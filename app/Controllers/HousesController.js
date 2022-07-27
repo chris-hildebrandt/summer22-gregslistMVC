@@ -1,6 +1,6 @@
 
 function _drawHouses(){
-  // GET THE HOUES TEMPLATE
+  // GET THE HOUSES TEMPLATE
   document.getElementById('listings').innerHTML = '<p> houses go here </p>'
 }
 
