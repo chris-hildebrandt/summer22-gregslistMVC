@@ -30,6 +30,12 @@ export class CarsController{
 
   viewCars(){
     _drawCars()
+    let carFormElm = document.getElementById("form")
+    carFormElm.classList.remove("d-none")
+    let jobFormElm = document.getElementById("job-form")
+    jobFormElm.classList.add("d-none")
+    let houseFormElm = document.getElementById("house-form")
+    houseFormElm.classList.add("d-none")
   }
 
   createCar(){
@@ -39,14 +45,14 @@ export class CarsController{
     let form = window.event.target
     console.log(form);
 
-   let newCar ={
+  let newCar ={
     make: form.make.value,
     model: form.model.value,
     year: form.year.value,
     price: form.price.value,
     img: form.img.value,
     description: form.description.value,
-   }
+  }
     carsService.createCar(newCar)
     form.reset()
     // NOTE replaced by listeners in constructor

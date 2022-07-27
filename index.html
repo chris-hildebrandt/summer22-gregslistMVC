@@ -22,7 +22,7 @@
     </nav>
     <button class="btn btn-primary" onclick="app.carsController.viewCars()">cars</button>
     <button class="btn btn-primary" onclick="app.housesController.viewHouses()">houses</button>
-    <button class="btn btn-primary">jobs</button>
+    <!-- <button class="btn btn-primary" onclick="app.jobsController.viewJobs()">Jobs</button> -->
   </header>
   <main>
     <div class="container-fluid">
@@ -46,7 +46,7 @@
       <section id="form" class="row justify-content-center p-3">
         <form class="col-10 bg-white p-3 elevation-2" onsubmit="app.carsController.createCar()">
           <h3 class="text-primary">List Your Car</h3>
-          <div class="row">
+          <div class="row p-3">
             <div class="col-4">
               <label class="form-label" for="make">Make</label>
               <input class="form-control" type="text" minlength="5" id="make" name="make">
@@ -69,6 +69,69 @@
           </div>
         </form>
       </section>
+      <!-- STUB House Form -->
+      <section id="house-form" class="row justify-content-center p-3 d-none">
+        <form class="col-10 bg-white p-3 elevation-2" onsubmit="app.housesController.createHouse()">
+          <h3 class="text-primary">List Your House</h3>
+          <div class="row p-3">
+            <div class="col-4">
+              <label class="form-label" for="state">State</label>
+              <input class="form-control" type="text" minlength="5" id="state" name="state">
+            </div>
+            <div class="col-4">
+              <label class="form-label" for="city">City</label>
+              <input class="form-control" type="text" id="city" name="city">
+            </div>
+            <div class="col-4">
+              <label class="form-label" for="year">Year</label>
+              <input class="form-control" type="number" id="year" name="year">
+            </div>
+            <label class="form-label" for="price">Price</label>
+            <input class="form-control" type="number" min="1" id="price" name="price">
+            <label class="form-label" for="img">Image</label>
+            <input class="form-control" type="text" id="img" name="img">
+            <label class="form-label" for="description">Description</label>
+            <textarea class="w-100 form-control" name="description" id="description" rows="5"></textarea>
+            <button type="submit" class="btn btn-primary w-100 p-2 mt-3 text-light">Submit</button>
+          </div>
+        </form>
+      </section>
+      </section> company, title, start, salary, img, description
+      <!-- STUB JOB FORM -->
+      <section id="job-form" class="row justify-content-center p-3 d-none">
+        <form class="col-10 bg-white p-3 elevation-2" onsubmit="app.jobsController.createJob()">
+          <h3 class="text-primary">List Your Job</h3>
+          <div class="row p-3">
+            <div class="col-4">
+              <label class="form-label" for="company">Company</label>
+              <input class="form-control" type="text" minlength="5" id="company" name="company">
+            </div>
+            <div class="col-4">
+              <label class="form-label" for="title">Job Title</label>
+              <input class="form-control" type="text" id="title" name="title">
+            </div>
+            <div class="col-4">
+              <label class="form-label" for="start">Start Date</label>
+              <input class="form-control" type="text" id="start" name="start">
+            </div>
+            <label class="form-label" for="salary">Salary</label>
+            <input class="form-control" type="number" min="1" id="salary" name="salary">
+            <!-- <label for="cars">Choose a car:</label>
+            <select name="cars" id="cars">
+              <option value="volvo">Volvo</option>
+              <option value="saab">Saab</option>
+              <option value="opel">Opel</option>
+              <option value="audi">Audi</option>
+            </select> -->
+            <label class="form-label" for="img">Image</label>
+            <input class="form-control" type="text" id="img" name="img">
+            <label class="form-label" for="description">Description</label>
+            <textarea class="w-100 form-control" name="description" id="description" rows="5"></textarea>
+            <button type="submit" class="btn btn-primary w-100 p-2 mt-3 text-light">Submit</button>
+          </div>
+        </form>
+      </section>
+      <!--      -->
     </div>
   </main>
   <footer class="bg-dark text-light">

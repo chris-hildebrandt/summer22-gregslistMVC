@@ -17,7 +17,7 @@ class AppState extends EventEmitter {
 
   houses = [
     new House({name:'Easter Island Head', state: "CA", city: "Bikini Bottom", year: 1990, img: "https://cdn.spongebobwiki.org/thumb/3/32/Squidward%27s_house_Scavenger_Pants.png/1200px-Squidward%27s_house_Scavenger_Pants.png", price: 5, description: "A peaceful paradise, no need to schedule a visit... Buy it now!"}),
-    new House({name:"Mobile Home", state:"MA?", city:"Bikini Bottom", year:2000, img:"https://static.wikia.nocookie.net/spongebob/images/3/3b/Fun-Sized_Friends_081.png/revision/latest?cb=20180215230735", price:500000, description:"It's not just a stone! it's a ROCK!"})
+    new House({name:"Mobile Home", state:"MA?", city:"Bikini Bottom", year:2000, img:"https://pbs.twimg.com/media/E0Ki7TvVkAA-Dy8.jpg", price:500000, description:"It's not just a stone! it's a ROCK!"})
   ]
 
 }
